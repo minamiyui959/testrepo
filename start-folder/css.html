@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSSスタイルシート</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            img {
+                max-width: 50%;
+                height: auto;
+                border: 2px dashed #fdea5b;
+            }
+            body { 
+                font-family: Arial, sans-serif;
+                background-color: hsl(316, 89%, 86%);
+                background: size 100%;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            h1 {
+                color: white;
+                background-color: #507cf8;
+                font-family: 'Roboto', sans-serif;
+                margin:auto
+            }
+            h2 {
+                color: #010717;
+                background-color: #f9992b;
+                font-family: Arial, sans-serif;
+            }
+            p {
+                color: #66ea6d;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+                border: 2px solid #fdea5b; 
+            }
+            header {
+                padding: 5px;
+                text-align: left;
+            }
+            main {
+                padding: 20px;
+            }
+            footer {
+                padding: 10px;
+            }
+     </style>
+ </head>
+
+    <body>
+        <header>
+            <h1>自己紹介</h1>
+        </header>
+        <main>
+            <section>
+                <h2>基本情報</h2>
+                <p>こんにちは！私は山田太郎です。趣味は読書と旅行です。</p>
+            </section>
+            <section>
+                <h2>好きなこと</h2>
+                <ul>
+                    <li>プログラミング</li>
+                    <li>ゲーム</li>
+                    <li>スポーツ観戦</li>
+                </ul>
+          </section>
+          <section>
+             <h2>プロフィール画像</h2>
+             <img src="https://4.bp.blogspot.com/-l-7ysQWfwKI/V9vCXANanCI/AAAAAAAA99U/gv0nwxbdxYYN3YxfEExIKCRlbiB1IEb2wCLcB/s800/hair_tsuyatsuya.png" alt="プロフィール画像">
+          </section>
+        </main>
+
+        <footer>
+            <h2>お問い合わせ</h2>
+            <p>ご連絡は以下のメールアドレスまでお願いします。</p>
+            <p>メール：example@example.com</p>
+        </footer>
+    </body>
+</html>
