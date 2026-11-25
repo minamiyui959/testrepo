@@ -108,7 +108,8 @@ label, input, textarea, button {
 }
 
 button {
-    background-color: white;
+    color: #ffffff;
+    background-color: rgb(66, 39, 240);
     padding: 12px;
     border: none;
     border-radius: 5px;
