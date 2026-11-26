@@ -5,9 +5,7 @@ const formulaarea = document.getElementById("formula");
 const resultarea = document.getElementById("result");
 
 val1input.addEventListener("input",calculate);
-val1input.addEventListener("change",calculate);
 val2input.addEventListener("input",calculate);
-val2input.addEventListener("change",calculate);
 operatorselect.addEventListener("change",calculate);
 
 function calculate(){
