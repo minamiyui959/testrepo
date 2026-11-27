@@ -15,11 +15,11 @@ document.getElementById("searchBtn").addEventListener("click",()=>{
             <p><strong>ユーザー名:</strong> ${data.login}</p>
             <p><strong>名前:</strong> ${data.name || "未設定"}</p>
             <p><strong>フォロワー数:</strong> ${data.followers}</p>
-            <p><storong>公開リポジトリ数:</strong> ${data.public_repos}</p>
-            <img src="${data.avater_url}" width="100" alt="アイコン画像"/> 
+            <p><strong>公開リポジトリ数:</strong> ${data.public_repos}</p>
+            <img src="${data.avatar_url}" width="100" alt="アイコン画像"/> 
             `;
         })
         .catch(err => {
-            resultDiv.innerHTML = `<p> style="color:red;">$err.message}</p>`;
+            resultDiv.innerHTML = `<p style="color:red;">${err.message}</p>`;
         })
 })
